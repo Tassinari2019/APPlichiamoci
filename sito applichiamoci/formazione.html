@@ -15,7 +15,7 @@
     specific language governing permissions and limitations
     under the License.
 -->
-<html>
+<html lang="it" dir="ltr">
     <head>
         <!--
         Customize this policy to fit your own app's needs. For more guidance, see:
@@ -26,62 +26,128 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-        <meta name="format-detection" content="telephone=no">
+
+		<!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        -->
+
+		<meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/formazione.css">
+
+		<link rel="stylesheet" type="text/css" href="css/formazione.css">
+		<link rel="stylesheet" href="./font-awesome/css/all.css"> <!-- menu !-->
+
         <title>FORMAZIONE</title>
     </head>
+
     <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-			
-	<!--Oriani-->		
-			<img src=".\img\logo-informagiovani.png"/>
-  
-  
-<h1>Formazione</h1>      
-    
 
-<a href="http://www.informagiovaniravenna.it/formazione/formazione-corsi/"><h2>Corsi gratuiti e a pagamento</h2></a>
-<a href="https://www.corsitsemiliaromagna.it">
-<h2>Corsi IFTS Emilia Romagna</h2></a>
-<h2>Corsi lingue</h2>
-<h3><a href="http://www.todayschoolofenglish.com">
-<ul>
-	<li>Today school of english</a></li>
-<a href="http://openenglishfaenza.com">
-	<li>Open english faenza</a></h3></li>
-</ul>
+	<!--Oriani-->
 
-<a href="http://www.informagiovaniravenna.it/formazione/formazione-informatica/"><h2>Corsi informatica</h2></a>
-<a href="http://www.informagiovaniravenna.it/formazione/formazione-universitaravenna/"><h2>Corsi universitari a Ravenna</h2></a>
+	<!--Hamburgher-->
+<div>
+  <nav>
+      <div class="menu-icon">
+        <i class="fas fa-bars" id="icon"></i>
+      </div>
+      <ul class="nav-links">
+        <li> <a class="link" href="./index.html">Home</a> </li>
+        <li> <a class="link" href="chi_siamo.html">Chi siamo</a> </li>
+        <li> <a class="link" href="http://www.informagiovanifaenza.it/news/">News</a> </li>
+        <li> <a class="link" href="http://www.informagiovaniravenna.it/newsletter-2/">Newsletters</a> </li>
+		<li> <a class="link" href="informagiovani.html">Informagiovani <br/>nella tua citt&agrave</a></li>
+        <li> <a class="link" href="https://www.youngercard.it/">Youngercard</a> </li>
+        <li> <a class="link" href="http://www.informagiovanifaenza.it/progetti/esc-solidarity-youth/">ESC – Solidarity Youth</a> </li>
+        <li> <a class="link" href="applichiamoci.html">Applichiamoci</a> </li>
+        <li> <a class="link" href="consulta_ragazzi.html">Consulta dei ragazzi</a> </li>
+        <li> <a class="link" href="contatti.html">Contatti e orari</a> </li>
 
-<a href="http://www.isiafaenza.it"><h2>Corsi Alta Formazione Artistica e Musicale<br></h2></a>
+      </ul>
+  </nav>
 
+  <div class="logo">
+    <div class=logo img><img class="logo" src=".\img\logo-informagiovani.png"/></div>
+  </div>
+</div>
 
-<h2>Indirizzi utili e
-Enti di formazione</h2>
-<h3><ul>
-	<li>Ravenna</a></li>
-	<a href="./ravenna.html">
-	<li>Lugo</li></a>
-	<a href="./lugo.html">
-	<li>Faenza</li></a>
-	<a href="./faenza.html">
-</ul></h3>
- 
-<h1><a href="./index.html">home</a></h1>
- </p>
+		<div class="app">
 
- 
+			<div class="page">
+				<h1>Formazione</h1>
+
+				<div>
+					<button type="button" name="button" class="dropbtn";>
+					<a href="http://www.informagiovaniravenna.it/formazione/formazione-corsi/">Corsi gratuiti e a pagamento
+					<img class="link" src="./img/link.png"/>
+					</a>
+					</button>
+				</div>
+
+				<div>
+					<button type="button" name="button" class="dropbtn";>
+					<a href="https://www.corsitsemiliaromagna.it">Corsi IFTS Emilia Romagna
+					<img class="link" src="./img/link.png"/></a>
+					</button>
+				</div>
+
+				<div>
+					<button type="button" name="button" onclick="showMenu(dropdown_content1)" class="dropbtn";>Corsi lingue &#9660;</button>
+
+						<div id="dropdown_content1" class="dropdown_content_class">
+							<a href="http://www.languagetoday.eu/home/"><h3>Language today - Today School of English - Faenza-Forl&igrave</h3></a><br/>
+							<a href="http://openenglishfaenza.com"><h3>Open English Faenza</h3></a><br/>
+							<a href="http://www.britishlugo.com/british-school-faenza/"><h3>British School Lugo-Faenza</h3></a><br/>
+							<a href="http://www.extraclass.it/"><h3>Extraclass Faenza <br/>sede estiva Tredozio</h3></a>
+						</div>
+				</div>
+
+				<div>
+					<button type="button" name="button" class="dropbtn";>
+					<a href="http://www.informagiovaniravenna.it/formazione/formazione-informatica/">Corsi informatica
+					<img class="link" src="./img/link.png"/></a>
+					</button>
+				</div>
+
+				<div>
+					<button type="button" name="button" class="dropbtn";>
+					<a href="http://www.informagiovaniravenna.it/formazione/formazione-universitaravenna/">Corsi universitari a Ravenna
+					<img class="link" src="./img/link.png"/></a>
+					</button>
+				</div>
+
+				<div>
+					<button type="button" name="button" class="dropbtn";>
+					<a href="http://www.isiafaenza.it">Corsi Alta Formazione Artistica
+					<img class="link" src="./img/link.png"/></a>
+					</button>
+				</div>
+
+				<div>
+					<button type="button" name="button" onclick="showMenu(dropdown_content2)" class="dropbtn";>Indirizzi utili e Enti di formazione &#9660;</button>
+
+					<div id="dropdown_content2" class="dropdown_content_class">
+						<a href="./formazione/ravenna.html"><h3>Ravenna</h3></a><br/>
+						<a href="./formazione/lugo.html"><h3>Lugo</h3></a><br/>
+						<a href="./formazione/faenza.html"><h3>Faenza</h3></a>
+					</div>
+
+				</div>
+				<div class="home">
+					<button class="btn"><a href="./index.html"><img src="./img/home - form.png"/></a></button>
+				</div>
+			</div>
+
+ <!--
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
             </div>
+			-->
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/hamburgher.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/menu_new.js"></script>
+
+
     </body>
 </html>
